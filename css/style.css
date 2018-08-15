@@ -1,3 +1,5 @@
+/************** Global CSS **************/
+
 body {
     background-color: #ffffff;
     /* height: 200vh; */
@@ -15,6 +17,8 @@ html, h1, h2, h3, h4, h5, h6 {
     background-color: #f6672d;
 }
 
+/************** Global CSS **************/
+
 /************** Main Container **************/
 
 .tm-main-container {}
@@ -23,6 +27,8 @@ html, h1, h2, h3, h4, h5, h6 {
     margin-left: 300px;
     margin-right: 200px;
 }
+
+/************** Main Container **************/
 
 /************** Navbar Section **************/
 
@@ -52,6 +58,8 @@ html, h1, h2, h3, h4, h5, h6 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/************** Navbar Section **************/
 
 /************** Header Slider **************/
 
@@ -90,11 +98,167 @@ html, h1, h2, h3, h4, h5, h6 {
     width: 40%;
 }
 
-/************** Body Content **************/
+/************** Header Slider **************/
+
+/************** Body Content - Standard **************/
 
 .tm-content {
-    height: 100vh;
+    /* height: 100%; */
 }
+
+/************** Body Content - Standard **************/
+
+/************** Body Content - User_Register **************/
+
+body.user_register .tm-content legend {
+    width: fit-content;
+    font-size: 35px;
+    padding-bottom: 50px
+}
+
+body.user_register .tm-content legend::after {
+    border-bottom: 3px solid #f6672d;
+    padding-top: 5px
+}
+
+body.user_register .tm-content div:nth-child(1) {
+    margin-right: 100px;
+}
+
+body.user_register .tm-content div:nth-child(1) form input {
+    width: 100%;
+}
+
+body.user_register .tm-content form select {
+    width: 25%
+}
+
+body.user_register .tm-content .tm-horizontal-border {
+    width: 4%;
+    border-left: 1px solid #222222;
+    opacity: 0.2;
+}
+
+body.user_register .tm-content .tm-account-type {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+body.user_register .tm-content .tm-account-type h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-top: 5px;
+    ;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.user_register .tm-content .tm-account-type div {
+    text-align: center
+}
+
+.tm-radio-label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px
+}
+
+/***********Checkbox Custom Design*************/
+
+/* The container */
+
+.tm-radio-label {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.tm-radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.tm-radio-label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.tm-radio-label input:checked~.checkmark {
+    background-color: #f6672d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.tm-radio-label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.tm-radio-label .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/***********Checkbox Custom Design*************/
+
+body.user_register .tm-submit-button div:nth-child(1) {
+    margin-right: 0px;
+}
+
+body.user_register .tm-submit-button {
+    background-color: #222222;
+    height: 100px;
+}
+
+.tm-submit-button div {
+    margin: 10px;
+    padding-top: 20px
+}
+
+body.user_register .tm-small-width {
+    width: 7%;
+}
+
+/************** Body Content - User_Register **************/
 
 /************** Footer Section **************/
 
@@ -109,8 +273,8 @@ html, h1, h2, h3, h4, h5, h6 {
     padding: 40px;
 }
 
-
 /************** Footer Section Col-1 **************/
+
 .tm-footer div:nth-child(1) h1, h3 {
     color: #ffffff;
 }
@@ -126,16 +290,19 @@ html, h1, h2, h3, h4, h5, h6 {
     padding: 30px;
 }
 
+/************** Footer Section Col-1 **************/
 
 /************** Footer Section Col-2 **************/
-.tm-footer div:nth-child(2) h2, a{
+
+.tm-footer div:nth-child(2) h2, a {
     color: #ffffff;
 }
-.tm-footer div:nth-child(2) a{
+
+.tm-footer div:nth-child(2) a {
     font-size: 15px
 }
 
-.tm-footer div:nth-child(2) ul{
+.tm-footer div:nth-child(2) ul {
     list-style: none;
     padding: 0;
 }
@@ -144,30 +311,39 @@ html, h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.tm-footer div:nth-child(2) ul a:hover{
+.tm-footer div:nth-child(2) ul a:hover {
     color: #f6672d;
 }
-.tm-footer div:nth-child(2) ul li{
-    padding: 7px    
+
+.tm-footer div:nth-child(2) ul li {
+    padding: 7px
 }
+
+/************** Footer Section Col-2 **************/
 
 /************** Footer Section Col-3 **************/
 
-.tm-footer div:nth-child(3) h2, i{
+.tm-footer div:nth-child(3) h2, i {
     color: #ffffff;
 }
 
-.tm-footer div:nth-child(3) i{
+.tm-footer div:nth-child(3) i {
     padding: 20px;
     font-size: 20px
 }
 
-.tm-footer div:nth-child(3) p{
+.tm-footer div:nth-child(3) p {
     font-size: 30px
 }
 
+/************** Footer Section Col-3 **************/
+
+/************** Footer Section **************/
 
 /************** Copyright Section **************/
-.tm-copyright{
+
+.tm-copyright {
     padding-top: 100px
 }
+
+/************** Copyright Section **************/

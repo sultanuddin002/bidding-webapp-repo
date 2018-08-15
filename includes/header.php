@@ -12,4 +12,4 @@
     <title>%TITLE%</title>
 </head>
 
-<body>
+<body class="<?php echo basename($_SERVER['PHP_SELF'], '.php') ?>">

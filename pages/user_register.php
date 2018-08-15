@@ -30,5 +30,11 @@ echo $buffer;
 ?>
 
 
+<!-- Body Content (User Register Form) -->
+<?php  include "../includes/content_add_user.php" ?>
+
+
+
+
 <!-- Footer -->
 <?php include "../includes/footer.php" ?>
