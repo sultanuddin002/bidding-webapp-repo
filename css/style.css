@@ -165,81 +165,6 @@ body.user_register .tm-content .tm-account-type div {
     padding: 15px
 }
 
-/***********Checkbox Custom Design*************/
-
-/* The container */
-
-.tm-radio-label {
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Hide the browser's default radio button */
-
-.tm-radio-label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-/* Create a custom radio button */
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-
-.tm-radio-label:hover input~.checkmark {
-    background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-
-.tm-radio-label input:checked~.checkmark {
-    background-color: #f6672d;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-
-.tm-radio-label input:checked~.checkmark:after {
-    display: block;
-}
-
-/* Style the indicator (dot/circle) */
-
-.tm-radio-label .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-}
-
-/***********Checkbox Custom Design*************/
-
 body.user_register .tm-submit-button div:nth-child(1) {
     margin-right: 0px;
 }
@@ -251,11 +176,37 @@ body.user_register .tm-submit-button {
 
 .tm-submit-button div {
     margin: 10px;
-    padding-top: 20px
+    padding-top: 20px;
+    display: inline-block;
 }
 
 body.user_register .tm-small-width {
     width: 7%;
+}
+
+body.user_register .tmp-form .div_1, body.user_register .tmp-form .div_2 {
+    width: 33%;
+    display: inline-block;
+}
+
+body.user_register .tmp-form .tmp-checkbox {
+    text-align: center;
+}
+
+body.user_register .tmp-form .div_1 fieldset h1, body.user_register .tmp-form .div_2 fieldset h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-bottom: 5px;
+    width: fit-content;
+    font-size: 35px;
+}
+
+body.user_register .tmp-form .div_3 h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-bottom: 5px;
+    width: fit-content;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /************** Body Content - User_Register **************/
@@ -347,3 +298,80 @@ body.user_register .tm-small-width {
 }
 
 /************** Copyright Section **************/
+
+/***********Checkbox Custom Design*************/
+
+/* The container */
+
+.tm-radio-label {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 40px!important;
+}
+
+/* Hide the browser's default radio button */
+
+.tm-radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-top: 12px!important;
+}
+
+/* On mouse-over, add a grey background color */
+
+.tm-radio-label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.tm-radio-label input:checked~.checkmark {
+    background-color: #f6672d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.tm-radio-label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.tm-radio-label .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/***********Checkbox Custom Design*************/

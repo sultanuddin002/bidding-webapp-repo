@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/uikit-custom.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ptsans-font.css" type="text/css">
+    <!-- Temp stylesheet for debuggin -->
+    <!-- <link rel="stylesheet" href="../css/temp_style.css"> -->
     <title>%TITLE%</title>
 </head>
 

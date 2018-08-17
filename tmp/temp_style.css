@@ -1,0 +1,103 @@
+/************** Body Content - User_Register **************/
+
+body.user_register .tm-content legend {
+    width: fit-content;
+    font-size: 35px;
+    padding-bottom: 50px
+}
+
+body.user_register .tm-content legend::after {
+    border-bottom: 3px solid #f6672d;
+    padding-top: 5px
+}
+
+body.user_register .tm-content div:nth-child(1) {
+    margin-right: 100px;
+}
+
+body.user_register .tm-content div:nth-child(1) form input {
+    width: 100%;
+}
+
+body.user_register .tm-content form select {
+    width: 25%
+}
+
+body.user_register .tm-content .tm-horizontal-border {
+    width: 4%;
+    border-left: 1px solid #222222;
+    opacity: 0.2;
+}
+
+body.user_register .tm-content .tm-account-type {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+body.user_register .tm-content .tm-account-type h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-top: 5px;
+    ;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.user_register .tm-content .tm-account-type div {
+    text-align: center
+}
+
+.tm-radio-label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px
+}
+
+body.user_register .tm-submit-button div:nth-child(1) {
+    margin-right: 0px;
+}
+
+body.user_register .tm-submit-button {
+    background-color: #222222;
+    height: 100px;
+}
+
+.tm-submit-button div {
+    margin: 10px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+body.user_register .tm-small-width {
+    width: 7%;
+}
+
+/************** Body Content - User_Register **************/
+
+
+body.user_register .tmp-form .div_1, body.user_register .tmp-form .div_2 {
+    width: 33%;
+    display: inline-block;
+}
+
+body.user_register .tmp-form .tmp-checkbox {
+    text-align: center;
+}
+
+body.user_register .tmp-form .div_1 fieldset h1, body.user_register .tmp-form .div_2 fieldset h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-bottom: 5px;
+    width: fit-content;
+    font-size: 35px;
+}
+
+body.user_register .tmp-form .div_3 h1 {
+    border-bottom: 3px solid #f6672d;
+    padding-bottom: 5px;
+    width: fit-content;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
